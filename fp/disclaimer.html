@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Momona Cafe & Restaurant</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/template-style.css" rel="stylesheet" />
+</head>
+
+
+
+<body> 
+<header>
+    <h1>Disclaimer</h1>
+
+    <p>Your use of Momona Cafe & Restaurant is subject to Letina's Privacy Policy. Please review our Privacy Policy, which also governs the Site and imform users of our data collection practices.</p>
+</header>
+		<footer class="tm-footer text-center">
+			<a href="tel:(206) 766-0607">Call us at: (206) 766-0607</a>, 
+			<p>
+			<a href="Adress:6754 Martin Luther King Jr S, Seattle, WA 98108"> Adress: 6754 Martin Luther King Jr S, Seattle, WA 98108</a>
+			</p>
+			<p>Copyright &copy; 2023 Momona Cafe & Restaurant 
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
